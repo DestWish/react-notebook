@@ -16,7 +16,7 @@ function Note({ id, text, editNote}) {
 
 function Notes({notes, editNote}) {
     return ( notes.map((note) =>
-            <Note id={note.id} text={note.text} editNote={editNote}/>
+            <Note key={note.id} id={note.id} text={note.text} editNote={editNote}/>
     ))
 }
 
